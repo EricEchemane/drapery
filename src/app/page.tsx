@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 export default function Home() {
   return (
     <>
-      <section className="relative h-screen md:h-[50vh] lg:h-screen">
+      <section className="relative">
         <Image
           alt=""
           src={HeroBannerSmallImage}
@@ -23,14 +23,19 @@ export default function Home() {
           quality={100}
           className="object-cover absolute top-0 right-0 bottom-0 left-0 hidden md:inline"
         />
-        <div className="mt-32 p-6 absolute top-0 left-0 right-0 py-6 text-white">
-          <h1 className={cn('text-4xl mb-6', playfair.className)}>
-            Elegant Custom Drapery for Every Home
+        <div className="text-white relative p-6 pt-36 pb-16 md:pb-32 lg:py-48 max-w-xl lg:max-w-full md:mx-auto md:text-center">
+          <h1
+            className={cn(
+              'text-4xl mb-6 md:text-balance md:text-5xl lg:text-7xl',
+              playfair.className
+            )}
+          >
+            Elegant Custom <br /> Drapery for Every Home
           </h1>
-          <p className="mb-6 text-lg">
+          <p className="mb-9 text-lg lg:text-xl">
             Premium quality | Made-to-measure | Professionally installed
           </p>
-          <Button variant={'outline'} size={'lg'} className="backdrop-blur-md">
+          <Button variant={'outline'} size={'lg'} className="backdrop-blur">
             Get a quote from us now!
           </Button>
         </div>
