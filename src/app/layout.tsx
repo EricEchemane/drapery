@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { SEO } from '@/lib/constants';
+import { afacad, SEO } from '@/lib/constants';
 import Navigation from '@/components/navigation';
 import Favicon from '@/assets/common/favicon.jpg';
 import { MaterialThemeProvider } from '@/lib/client-providers';
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <MaterialThemeProvider>
       <html lang="en">
-        <body>
+        <body className={afacad.className}>
           <Navigation />
           <main>{children}</main>
         </body>

@@ -15,7 +15,7 @@ export default function DraperyLogo(props: Props) {
   return (
     <Image
       src={logo}
-      width={40}
+      width={props.width ?? 40}
       alt="drapery logo"
       className={cn(props.className)}
     />
