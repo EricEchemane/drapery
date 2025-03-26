@@ -6,7 +6,6 @@ import { cn } from '@/lib/utils';
 interface Props {
   theme?: 'light' | 'dark';
   className?: string;
-  width?: number;
 }
 
 export default function DraperyLogo(props: Props) {
@@ -14,8 +13,8 @@ export default function DraperyLogo(props: Props) {
 
   return (
     <Image
+      quality={100}
       src={logo}
-      width={props.width ?? 40}
       alt="drapery logo"
       className={cn(props.className)}
     />
