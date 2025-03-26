@@ -29,7 +29,7 @@ export const navlinks: Navlink[] = [
   },
   {
     displayText: 'Contact',
-    href: '/#contact',
+    href: '/contact',
   },
 ];
 
