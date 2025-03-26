@@ -2,6 +2,7 @@ import Image from 'next/image';
 import HeroBannerSmallImage from '@/assets/home-page/banner-small.png';
 import HeroBannerImage from '@/assets/home-page/banner.png';
 import ConcavePortal from '@/assets/home-page/concave-portal.png';
+import SheerCurtain from '@/assets/home-page/sheer-curtains.png';
 import { cn } from '@/lib/utils';
 import { playfair } from '@/lib/constants';
 import { Button } from '@/components/ui/button';
@@ -11,6 +12,7 @@ export default function Home() {
     <>
       <LandingSection />
       <Section2 />
+      <WeOffer />
     </>
   );
 }
@@ -66,7 +68,7 @@ function Section2() {
           className="w-[240px] mx-auto mb-6 md:mb-0 lg:w-[360px]"
         />
         <div>
-          <h2
+          <h3
             className={cn(
               playfair.className,
               'text-lg md:text-xl lg:text-3xl mb-9 font-bold'
@@ -75,7 +77,7 @@ function Section2() {
             Achieve a designer-inspired look to your home with professionally
             installed sheers by{' '}
             <span className="text-primary">The Drapery Studio.</span>
-          </h2>
+          </h3>
           <p className="mb-6 text-muted-foreground">
             Not all curtains are created equal. With custom curtains, every inch
             is measured, every fabric chosen to match your taste, and every
@@ -88,6 +90,20 @@ function Section2() {
           </p>
         </div>
       </div>
+    </section>
+  );
+}
+
+function WeOffer() {
+  return (
+    <section className="py-6 max-w-7xl mx-auto">
+      <h2 className={cn('font-bold text-2xl mb-3 px-6', playfair.className)}>
+        We Offer
+      </h2>
+      <p className="text-muted-foreground px-6 mb-6">
+        Dress up your space with custom designed curtains, sheers, and blinds.
+      </p>
+      <Image alt="Sheer Curtain" src={SheerCurtain} className="pl-6 max-w-xl" />
     </section>
   );
 }
