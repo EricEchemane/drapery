@@ -32,3 +32,5 @@ export const navlinks: Navlink[] = [
     href: '/#contact',
   },
 ];
+
+export const primaryColor = '#6f5b52';
