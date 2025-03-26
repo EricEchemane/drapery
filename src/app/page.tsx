@@ -10,12 +10,14 @@ import { CustomerReview } from '@/lib/types';
 import CustomerAvatarMarie from '@/assets/home-page/customer-avatar-marie.png';
 import CustomerAvatarJonathan from '@/assets/home-page/customer-avatar-jonathan.png';
 import CustomerAvatarAngela from '@/assets/home-page/customer-avatar-angela.png';
+import CTAImage from '@/assets/home-page/transform-your-space-section.png';
+import CTAImageSmall from '@/assets/home-page/transform-your-space-small.png';
+import { Avatar, Rating } from '@mui/material';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from '@/components/ui/carousel';
-import { Avatar, Rating } from '@mui/material';
 
 export default function Home() {
   return (
@@ -24,6 +26,7 @@ export default function Home() {
       <Section2 />
       <WeOffer />
       <CustomerReviews />
+      <TransformYourSpace />
     </>
   );
 }
@@ -57,11 +60,7 @@ function LandingSection() {
         <p className="mb-9 text-lg lg:text-xl">
           Premium quality | Made-to-measure | Professionally installed
         </p>
-        <Button
-          variant={'outline'}
-          size={'lg'}
-          className="backdrop-blur lg:text-lg"
-        >
+        <Button variant={'outline'} size={'lg'} className="lg:text-lg">
           Get a quote from us now!
         </Button>
       </div>
@@ -151,7 +150,7 @@ function CustomerReviews() {
   ];
 
   return (
-    <section className="py-12 bg-[var(--banana)] md:py-24">
+    <section className="py-12 bg-[var(--banana)] lg:py-24">
       <div className="px-6 text-center">
         <h2
           className={cn(
@@ -161,7 +160,7 @@ function CustomerReviews() {
         >
           Customer Reviews
         </h2>
-        <p className="text-muted-foreground md:text-balance">
+        <p className="text-muted-foreground text-balance text-sm md:text-base">
           Discover why our clients love The Drapery Studio! From exquisite
           craftsmanship to a perfect fit, our custom curtains have transformed
           spaces with elegance and style. Read their experiences and see how we
@@ -193,6 +192,42 @@ function CustomerReviews() {
           })}
         </CarouselContent>
       </Carousel>
+    </section>
+  );
+}
+
+function TransformYourSpace() {
+  return (
+    <section className="relative bg-primary">
+      <Image
+        src={CTAImage}
+        alt=""
+        className="absolute top-0 left-0 h-full object-cover hidden md:inline"
+      />
+      <Image
+        src={CTAImageSmall}
+        alt=""
+        className="absolute top-0 left-0 h-full object-cover md:hidden"
+      />
+      <div className="px-6 relative py-12 max-w-5xl mx-auto md:p-12 lg:px-4 lg:py-24 xl:py-32">
+        <h2
+          className={cn(
+            playfair.className,
+            'text-center text-white text-xl font-bold mb-6 md:text-left md:text-2xl lg:text-3xl xl:text-4xl'
+          )}
+        >
+          Transform Your Space <br /> with Custom Curtains
+        </h2>
+        <p className="text-center text-neutral-300 mb-8 md:text-neutral-50 md:text-base text-balance text-sm md:text-left lg:text-lg">
+          Expert guidance, premium fabrics, and a perfect fit—tailored just for
+          you.
+        </p>
+        <div className="flex justify-center md:justify-start">
+          <Button className="text-white" variant={'outline'} size={'lg'}>
+            Book a Free Consultation Today!
+          </Button>
+        </div>
+      </div>
     </section>
   );
 }
