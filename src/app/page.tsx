@@ -289,7 +289,7 @@ function CustomerReviews() {
   );
 }
 
-function TransformYourSpace() {
+export function TransformYourSpace() {
   return (
     <section className="relative bg-primary">
       <Image
