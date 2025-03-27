@@ -15,10 +15,10 @@ export const SEO = {
 };
 
 export const navlinks: Navlink[] = [
-  {
-    displayText: 'About',
-    href: '/about',
-  },
+  // {
+  //   displayText: 'About',
+  //   href: '/about',
+  // },
   {
     displayText: 'Services',
     href: '/#services',
