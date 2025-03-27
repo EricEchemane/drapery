@@ -75,13 +75,13 @@ function Section2() {
         <Image
           src={ConcavePortal}
           alt=""
-          className="w-[240px] mx-auto mb-6 md:mb-0 lg:w-[360px]"
+          className="w-[300px] mx-auto mb-6 md:mb-0 lg:w-[360px]"
         />
         <div>
           <h3
             className={cn(
               playfair.className,
-              'text-lg md:text-xl lg:text-3xl mb-9 font-bold'
+              'text-xl lg:text-3xl mb-9 font-bold'
             )}
           >
             Achieve a designer-inspired look to your home with professionally
@@ -213,7 +213,7 @@ function TransformYourSpace() {
         <h2
           className={cn(
             playfair.className,
-            'text-center text-white text-xl font-bold mb-6 md:text-left md:text-2xl lg:text-3xl xl:text-4xl'
+            'text-center text-white text-2xl font-bold mb-6 md:text-left md:text-2xl lg:text-3xl xl:text-4xl'
           )}
         >
           Transform Your Space <br /> with Custom Curtains

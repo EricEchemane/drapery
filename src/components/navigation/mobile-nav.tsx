@@ -59,7 +59,7 @@ export default function MobileNav() {
               'bg-transparent w-full tracking-widest font-normal'
             )}
           >
-            GET FREE CONSULTATION
+            Get Free Consultation
           </Button>
         </div>
       </SheetContent>
