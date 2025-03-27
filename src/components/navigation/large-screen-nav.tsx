@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function LargeScreenNav() {
   return (
     <>
-      <ul className="hidden md:flex lg:gap-12 text-white items-center mx-auto pt-3">
+      <ul className="hidden md:flex lg:gap-32 text-white items-center mx-auto pt-3">
         {navlinks.map((item, i) => {
           return (
             <li key={i}>
@@ -29,7 +29,7 @@ export default function LargeScreenNav() {
           'bg-transparent tracking-widest font-normal hidden md:inline text-white mt-1'
         )}
       >
-        Get Free Consultation!
+        GET FREE CONSULTATION
       </Button>
     </>
   );

@@ -12,7 +12,7 @@ import {
 export default function Footer() {
   const Company = (
     <ul className="space-y-3 md:text-neutral-300">
-      <li>About</li>
+      {/* <li>About</li> */}
       <li>Services</li>
       <li>Portfolio</li>
     </ul>
@@ -29,21 +29,29 @@ export default function Footer() {
   const Social = (
     <div className="flex items-center gap-3">
       <a href="https://facebook.com/The-Drapery-Studio/" target="_blank">
-        <Button size={'icon'} className="rounded-full">
+        <Button
+          size="icon"
+          className="rounded-full flex items-center justify-center w-10 h-10"
+        >
           <Image
-            alt=""
-            width={36}
-            height={36}
+            alt="Facebook"
+            width={24}
+            height={24}
+            className="object-contain"
             src={externalLinks.icons.facebook}
           />
         </Button>
       </a>
       <a href="https://instagram.com/the_draperystudio" target="_blank">
-        <Button size={'icon'} className="rounded-full">
+        <Button
+          size="icon"
+          className="rounded-full flex items-center justify-center w-10 h-10"
+        >
           <Image
-            alt=""
+            alt="Instagram"
             width={24}
             height={24}
+            className="object-contain"
             src={externalLinks.icons.instagram}
           />
         </Button>
@@ -56,7 +64,7 @@ export default function Footer() {
       <div className="flex flex-col max-w-7xl mx-auto px-6 md:flex-row md:gap-12">
         <div className="flex flex-col items-center gap-6 md:items-start">
           <DraperyLogo className="w-[80px]" />
-          <p className="text-muted-foreground md:max-w-[300px]">
+          <p className="text-muted-foreground md:max-w-[300px] text-center md:text-left ">
             Premium quality. Made-to-measure. Professionally installed.
           </p>
           <div className="md:hidden">{Social}</div>

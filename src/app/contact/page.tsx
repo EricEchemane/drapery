@@ -28,15 +28,25 @@ export default function Page() {
                 <div className="flex flex-row gap-6 mt-8">
                   <div>
                     <p className="text-sm text-white/80">Facebook</p>
-                    <p className="font-medium text-xs md:text-sm">
+                    <a
+                      className="font-medium text-xs md:text-sm hover:underline underline-offset-2 hover:scale-105 transition-transform duration-200 inline-block"
+                      href="http://www.facebook.com/The-Drapery-Studio"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       /The-Drapery-Studio
-                    </p>
+                    </a>
                   </div>
                   <div>
                     <p className="text-sm text-white/80">Instagram</p>
-                    <p className="font-medium text-xs md:text-sm">
+                    <a
+                      className="font-medium text-xs md:text-sm hover:underline underline-offset-2 hover:scale-105 transition-transform duration-200 inline-block"
+                      href="http://www.instagram.com/the_draperystudio"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       /the_draperystudio
-                    </p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -47,14 +57,18 @@ export default function Page() {
                 <h2 className={cn('text-3xl font-bold', playfair.className)}>
                   {"We're here"}
                 </h2>
-                <div className="flex gap-2 mt-8 mb-10">
+                <div className="mt-8 mb-10 flex gap-1 text-xs md:text-sm transition-transform duration-300 hover:scale-[1.1] hover:text-white origin-left">
                   <span>
                     <MapPin className="w-4 h-4" />
                   </span>
-                  <span className="text-xs md:text-sm">
+                  <a
+                    href="https://maps.google.com/?q=SPA+Building+2,+Xavierville+Avenue,+Quezon+City,+Philippines"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     SP&A Building 2, Xavierville Avenue, Quezon City,
                     Philippines
-                  </span>
+                  </a>
                 </div>
               </div>
 
