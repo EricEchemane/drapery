@@ -52,7 +52,7 @@ export default function Footer() {
   );
 
   return (
-    <footer className="bg-[#2A2A2A] py-12">
+    <footer className="bg-[#2A2A2A] py-12 lg:pt-16">
       <div className="flex flex-col max-w-7xl mx-auto px-6 md:flex-row md:gap-12">
         <div className="flex flex-col items-center gap-6 md:items-start">
           <DraperyLogo className="w-[80px]" />
