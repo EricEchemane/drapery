@@ -5,6 +5,7 @@ import Navigation from '@/components/navigation';
 import Favicon from '@/assets/common/favicon.jpg';
 import { MaterialThemeProvider } from '@/lib/client-providers';
 import Footer from '@/components/footer';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: SEO.title,
@@ -24,6 +25,7 @@ export default function RootLayout({
           <Navigation />
           <main>{children}</main>
           <Footer />
+          <Analytics />
         </body>
       </html>
     </MaterialThemeProvider>
