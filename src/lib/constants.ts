@@ -34,3 +34,10 @@ export const navlinks: Navlink[] = [
 ];
 
 export const primaryColor = '#6f5b52';
+
+export const externalLinks = {
+  icons: {
+    facebook: 'https://www.svgrepo.com/show/488577/facebook.svg',
+    instagram: 'https://www.svgrepo.com/show/521711/instagram.svg',
+  },
+};

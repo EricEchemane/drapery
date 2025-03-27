@@ -41,6 +41,7 @@ export default function MobileNav() {
             return (
               <li key={i}>
                 <Link
+                  onClick={() => setOpen(false)}
                   className="block px-4 mx-2 py-3 hover:bg-white/20 rounded-md"
                   href={item.href}
                 >

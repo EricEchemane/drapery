@@ -106,7 +106,10 @@ function Section2() {
 
 function WeOffer() {
   return (
-    <section className="py-6 max-w-7xl mx-auto lg:py-24">
+    <section
+      className="py-6 max-w-7xl mx-auto lg:py-24 scroll-mt-32"
+      id="services"
+    >
       <h2
         className={cn(
           'font-bold text-2xl mb-3 px-6 lg:text-3xl md:text-center',

@@ -4,6 +4,7 @@ import { afacad, SEO } from '@/lib/constants';
 import Navigation from '@/components/navigation';
 import Favicon from '@/assets/common/favicon.jpg';
 import { MaterialThemeProvider } from '@/lib/client-providers';
+import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
   title: SEO.title,
@@ -22,6 +23,7 @@ export default function RootLayout({
         <body className={afacad.className}>
           <Navigation />
           <main>{children}</main>
+          <Footer />
         </body>
       </html>
     </MaterialThemeProvider>
