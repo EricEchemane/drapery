@@ -30,7 +30,7 @@ export default function Page() {
                     <p className="text-sm text-white/80">Facebook</p>
                     <a
                       className="font-medium text-xs md:text-sm hover:underline underline-offset-2 hover:scale-105 transition-transform duration-200 inline-block"
-                      href="http://www.facebook.com/The-Drapery-Studio"
+                      href="https://www.facebook.com/profile.php?id=61572045971922"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

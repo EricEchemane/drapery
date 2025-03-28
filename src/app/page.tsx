@@ -272,7 +272,7 @@ function CustomerReviews() {
                 key={i}
                 className="basis-3/4 md:basis-1/2 lg:basis-1/3"
               >
-                <div className="shadow-md rounded-3xl p-6 bg-white">
+                <div className="shadow-md rounded-3xl p-6 bg-white h-[260px] sm:h-auto flex flex-col justify-between">
                   <Rating readOnly value={5} sx={{ color: primaryColor }} />
                   <p className="mb-3 mt-1 text-muted-foreground">{r.message}</p>
                   <div className="flex gap-3 items-center">
