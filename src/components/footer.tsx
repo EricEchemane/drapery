@@ -8,6 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import { Mail, MapPin, PhoneIcon } from 'lucide-react';
 
 export default function Footer() {
   const Company = (
@@ -20,15 +21,27 @@ export default function Footer() {
 
   const Contact = (
     <ul className="space-y-3 md:text-neutral-300">
-      <li>SP&A Building 2, Xavierville Avenue, Quezon City, Philippines</li>
-      <li>0961 153 8626</li>
-      <li>thedraperystudioph@gmail.com</li>
+      <li className="flex items-start gap-2">
+        <MapPin className="mt-1 w-6 h-6" />
+        SP&A Building 2, Xavierville Avenue, Quezon City, Philippines
+      </li>
+      <li className="flex items-center gap-2">
+        <PhoneIcon className="w-4 h-4" />
+        0961 153 8626
+      </li>
+      <li className="flex items-center gap-2">
+        <Mail className="w-4 h-4" />
+        thedraperystudioph@gmail.com
+      </li>
     </ul>
   );
 
   const Social = (
     <div className="flex items-center gap-3">
-      <a href="https://www.facebook.com/profile.php?id=61572045971922" target="_blank">
+      <a
+        href="https://www.facebook.com/profile.php?id=61572045971922"
+        target="_blank"
+      >
         <Button
           size="icon"
           className="rounded-full flex items-center justify-center w-10 h-10"
@@ -69,7 +82,7 @@ export default function Footer() {
           </p>
           <div className="md:hidden">{Social}</div>
         </div>
-        <div className="text-white md:flex gap-12 lg:gap-24 mx-auto text-center md:text-left md:ml-auto mt-8 md:mt-0">
+        <div className="text-white md:flex gap-12 lg:gap-24 md:text-left text-center mx-auto md:ml-auto mt-8 md:mt-0">
           <Accordion type="multiple" className="md:hidden">
             <AccordionItem value="item-1">
               <AccordionTrigger>Company</AccordionTrigger>
