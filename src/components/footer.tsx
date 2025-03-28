@@ -28,7 +28,7 @@ export default function Footer() {
 
   const Social = (
     <div className="flex items-center gap-3">
-      <a href="https://facebook.com/The-Drapery-Studio/" target="_blank">
+      <a href="https://www.facebook.com/profile.php?id=61572045971922" target="_blank">
         <Button
           size="icon"
           className="rounded-full flex items-center justify-center w-10 h-10"
@@ -69,7 +69,7 @@ export default function Footer() {
           </p>
           <div className="md:hidden">{Social}</div>
         </div>
-        <div className="text-white md:flex gap-12 lg:gap-24 md:ml-auto">
+        <div className="text-white md:flex gap-12 lg:gap-24 mx-auto text-center md:text-left md:ml-auto mt-8 md:mt-0">
           <Accordion type="multiple" className="md:hidden">
             <AccordionItem value="item-1">
               <AccordionTrigger>Company</AccordionTrigger>
